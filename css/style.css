@@ -7,4 +7,79 @@ body {
   line-height: 1.6;
   color: #333;
 }
+h1, h2, h3 {
+  text-align: center;
+  margin: 20px 0 10px 0;
+}
 
+p {
+  max-width: 800px;
+  margin: 10px auto;
+  text-align: justify;
+}
+
+img {
+  display: block;
+  margin: 15px auto;
+  border-radius: 8px;
+}
+
+
+a {
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  background-color: #04AA6D;
+  padding: 10px 20px;
+  margin: 20px auto;
+  border-radius: 5px;
+  text-align: center;
+}
+
+a:hover {
+  background-color: #037a50;
+}
+
+
+ul {
+  max-width: 600px;
+  margin: 10px auto 20px auto;
+  padding-left: 20px;
+}
+
+li {
+  margin-bottom: 5px;
+}
+
+
+section {
+  padding: 20px 0;
+  border-bottom: 1px solid #ccc;
+}
+
+section:nth-of-type(odd) {
+  background-color: #eaf1f8;
+}
+
+
+img[width="30%"] {
+  width: 30%;
+}
+
+img[width="25%"] {
+  width: 25%;
+}
+
+img[width="10%"] {
+  width: 10%;
+}
+
+
+@media (max-width: 768px) {
+  body {
+    padding: 0 10px;
+  }
+  img {
+    width: 80% !important; 
+  }
+}
