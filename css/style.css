@@ -1,85 +1,99 @@
-
+/* Base Page Styling */
 body {
-  background-color: #a7c2e9; 
+  background-color: #abc9e7;   /* Improved contrast */
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin: 0;
   padding: 0 20px;
   line-height: 1.6;
-  color: #333;
+  color: #1a1a1a; /* Darker text for accessibility */
 }
+
+/* Header */
+header {
+  text-align: center;
+  padding: 20px 0;
+}
+
+/* Navigation */
+nav {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  background-color: rgb(49, 94, 77);
+  padding: 10px 20px;
+  margin: 5px;
+  border-radius: 5px;
+  display: inline-block;
+}
+
+nav a:hover {
+  background-color: #037a50;
+}
+
+/* Headings */
 h1, h2, h3 {
   text-align: center;
   margin: 20px 0 10px 0;
 }
 
+/* Sections */
+section {
+  padding: 20px 0;
+  border-bottom: 1px solid #ccc;
+}
+
+/* Paragraphs */
 p {
   max-width: 800px;
   margin: 10px auto;
   text-align: justify;
 }
 
-img {
-  display: block;
-  margin: 15px auto;
-  border-radius: 8px;
-}
-
-
-a {
-  display: inline-block;
-  text-decoration: none;
-  color: white;
-  background-color: #04AA6D;
-  padding: 10px 20px;
-  margin: 20px auto;
-  border-radius: 5px;
-  text-align: center;
-}
-
-a:hover {
-  background-color: #037a50;
-}
-
-
-ul {
+/* Lists */
+ul, ol {
   max-width: 600px;
   margin: 10px auto 20px auto;
   padding-left: 20px;
 }
 
-li {
-  margin-bottom: 5px;
+/* Images */
+img {
+  display: block;
+  margin: 15px auto;
+  border-radius: 8px;
+  max-width: 100%;
 }
 
+/* Flexbox Layout */
+.flex-container {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+/* Lane Map Image */
+.lane-map {
+  width: 25%;   /* Shrinks the lane image */
+  height: auto;
+}
 
-section {
+.flex-item {
+  flex: 1;
+  min-width: 250px;
+}
+
+/* Footer */
+footer {
+  text-align: center;
   padding: 20px 0;
-  border-bottom: 1px solid #ccc;
-}
-
-section:nth-of-type(odd) {
   background-color: #eaf1f8;
+  margin-top: 20px;
 }
 
-
-img[width="30%"] {
-  width: 30%;
-}
-
-img[width="25%"] {
-  width: 25%;
-}
-
-img[width="10%"] {
-  width: 10%;
-}
-
-
-@media (max-width: 768px) {
-  body {
-    padding: 0 10px;
-  }
-  img {
-    width: 80% !important; 
-  }
-}
+/* Responsive Media Query */
+@medi
