@@ -1,24 +1,16 @@
-/* Base Page Styling */
+
 body {
-  background-color: #abc9e7;   /* Improved contrast */
+  background-color: #abc9e7; /* Keep your background */
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  margin: 0;
-  padding: 0 20px;
   line-height: 1.6;
-  color: #181717; /* Darker text for accessibility */
+  color: #181717;
 }
 
-/* Header */
+
 header {
   text-align: center;
-  padding: 20px 0;
 }
 
-/* Navigation */
-nav {
-  text-align: center;
-  margin-bottom: 20px;
-}
 
 nav a {
   text-decoration: none;
@@ -34,60 +26,50 @@ nav a:hover {
   background-color: #037a50;
 }
 
-/* Headings */
+
 h1, h2, h3 {
   text-align: center;
   margin: 20px 0 10px 0;
 }
 
-/* Sections */
+
 section {
   padding: 20px 0;
   border-bottom: 1px solid #ccc;
 }
 
-/* Paragraphs */
+
 p {
   max-width: 800px;
   margin: 10px auto;
   text-align: justify;
 }
 
-/* Lists */
+
 ul, ol {
   max-width: 600px;
   margin: 10px auto 20px auto;
   padding-left: 20px;
 }
 
-/* Images */
+
 img {
   display: block;
   margin: 15px auto;
   border-radius: 8px;
   max-width: 100%;
-}
-
-/* Flexbox Layout */
-.flex-container {
-  display: flex;
-  gap: 20px;
-  justify-content: center;
-  align-items: flex-start;
-  flex-wrap: wrap;
-}
-/* Lane Map Image */
-.lane-map {
-  width: 25%;   /* Shrinks the lane image */
   height: auto;
 }
 
-.flex-item {
-  flex: 1;
-  min-width: 250px;
+/* Lane Map Image */
+.lane-map {
+  width: 25%;
+  height: auto;
 }
 
-/* Footer */
+
+
+
 footer {
   text-align: center;
   padding: 20px 0;
@@ -95,5 +77,15 @@ footer {
   margin-top: 20px;
 }
 
-/* Responsive Media Query */
-@medi
+
+@media (max-width: 768px) {
+ 
+  .lane-map {
+    width: 90%;
+  }
+
+  
+  p {
+    text-align: left;
+  }
+}

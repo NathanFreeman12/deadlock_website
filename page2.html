@@ -2,104 +2,135 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Deadlock Characters</title>
+
+  <!-- Bootstrap CSS (must be ABOVE style.css) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Your custom CSS -->
   <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
 
   <!-- Header -->
-  <header>
-    <h1 class="main-title">Deadlock Characters</h1>
+  <header class="py-4">
+    <div class="container">
+      <h1 class="main-title">Deadlock Characters</h1>
+    </div>
   </header>
 
   <!-- Navigation -->
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="page2.html">Characters</a>
+  <nav class="bg-dark py-2">
+    <div class="container">
+      <a class="text-white me-3" href="index.html">Home</a>
+      <a class="text-white" href="page2.html">Characters</a>
+    </div>
   </nav>
 
   <!-- Main Content -->
-  <main>
+  <main class="container py-4">
 
     <!-- Characters Section -->
-    <section id="characters">
-      <h2>Playable Heroes</h2>
+    <section id="characters" class="mb-5">
+      <h2 class="mb-3">Playable Heroes</h2>
 
       <img src="/images/DL_char.png"
            alt="Deadlock hero roster showing multiple playable characters"
-           class="char-img">
+           class="char-img img-fluid mb-3">
 
       <p>
-        Players choose unique heroes with different abilities and roles. 
+        Players choose unique heroes with different abilities and roles.
         Coordinating hero abilities and team composition is key to winning.
       </p>
     </section>
 
     <!-- Classes Section -->
     <section id="classes">
-      <h2>Hero Classes</h2>
+      <h2 class="mb-4">Hero Classes</h2>
 
-      <h3>Assassins (High mobility, burst damage)</h3>
-      <ul>
-        <li>Calico</li>
-        <li>Drifter</li>
-        <li>Haze</li>
-        <li>Lash</li>
-        <li>Mirage</li>
-        <li>Pocket</li>
-        <li>Vyper</li>
-        <li>Yamato</li>
-      </ul>
+      <!-- Bootstrap grid replacing flex layout -->
+      <div class="row g-4">
 
-      <h3>Brawlers</h3>
-      <ul>
-        <li>Abrams</li>
-        <li>Bebop</li>
-        <li>Billy</li>
-        <li>Kelvin</li>
-        <li>Mo & Krill</li>
-        <li>Shiv</li>
-        <li>Victor</li>
-        <li>Warden</li>
-      </ul>
+        <div class="col-12 col-md-6">
+          <h3>Assassins (High mobility, burst damage)</h3>
+          <ul>
+            <li>Calico</li>
+            <li>Drifter</li>
+            <li>Haze</li>
+            <li>Lash</li>
+            <li>Mirage</li>
+            <li>Pocket</li>
+            <li>Vyper</li>
+            <li>Yamato</li>
+          </ul>
+        </div>
 
-      <h3>Marksmen (Ranged damage dealers)</h3>
-      <ul>
-        <li>Grey Talon</li>
-        <li>Holliday</li>
-        <li>Infernus</li>
-        <li>Ivy</li>
-        <li>Mina</li>
-        <li>Paradox</li>
-        <li>Venator</li>
-        <li>Vindicta</li>
-        <li>Wraith</li>
-      </ul>
+        <div class="col-12 col-md-6">
+          <h3>Brawlers</h3>
+          <ul>
+            <li>Abrams</li>
+            <li>Bebop</li>
+            <li>Billy</li>
+            <li>Kelvin</li>
+            <li>Mo & Krill</li>
+            <li>Shiv</li>
+            <li>Victor</li>
+            <li>Warden</li>
+          </ul>
+        </div>
 
-      <h3>Mystics (Support / Utility)</h3>
-      <ul>
-        <li>Doorman</li>
-        <li>Dynamo</li>
-        <li>Lady Geist</li>
-        <li>McGinnis</li>
-        <li>Paige</li>
-        <li>Seven</li>
-        <li>Sinclair</li>
-        <li>Viscous</li>
-        <li>Rem</li>
-      </ul>
+        <div class="col-12 col-md-6">
+          <h3>Marksmen (Ranged damage dealers)</h3>
+          <ul>
+            <li>Grey Talon</li>
+            <li>Holliday</li>
+            <li>Infernus</li>
+            <li>Ivy</li>
+            <li>Mina</li>
+            <li>Paradox</li>
+            <li>Venator</li>
+            <li>Vindicta</li>
+            <li>Wraith</li>
+          </ul>
+        </div>
 
-      <a href="index.html">Return to Deadlock homepage</a>
+        <div class="col-12 col-md-6">
+          <h3>Mystics (Support / Utility)</h3>
+          <ul>
+            <li>Doorman</li>
+            <li>Dynamo</li>
+            <li>Lady Geist</li>
+            <li>McGinnis</li>
+            <li>Paige</li>
+            <li>Seven</li>
+            <li>Sinclair</li>
+            <li>Viscous</li>
+            <li>Rem</li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="mt-4">
+        <a class="btn btn-primary" href="index.html">
+          Return to Deadlock homepage
+        </a>
+      </div>
 
     </section>
 
   </main>
 
   <!-- Footer -->
-  <footer>
-    <p>&copy; 2026 Deadlock Educational Project</p>
+  <footer class="py-4">
+    <div class="container">
+      <p>&copy; 2026 Deadlock Educational Project</p>
+    </div>
   </footer>
 
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
